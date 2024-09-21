@@ -5,6 +5,7 @@ import ListCustomer from '../components/customers/ListCustomer.vue';
 import ListProduct from '../components/products/ListProduct.vue';
 import ListOrder from '../components/orders/ListOrder.vue';
 import AddOrder from '../components/orders/AddOrder.vue'; 
+import EditOrder from '../components/orders/EditOrder.vue'; 
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/add-order',  
     name: 'order-add',
     component: AddOrder,
+  },
+  {
+    path: '/order-edit/:id',
+    name: 'order-edit',
+    component: EditOrder,
   },
 ];
 
