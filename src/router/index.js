@@ -1,26 +1,30 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // Composants que tu veux afficher pour chaque route
-import customerList from '../components/customers/customerList.vue';
-// import ProductList from '../components/products/ProductList.vue';
-// import OrderList from '../components/orders/OrderList.vue';
+import ListCustomer from '../components/customers/ListCustomer.vue';
+import ListProduct from '../components/products/ListProduct.vue';
+import ListOrder from '../components/orders/ListOrder.vue';
 
 const routes = [
   {
+    path: '/',
+    redirect: '/customers'
+  },
+  {
     path: '/customers',
-    name: 'customers',   // Nom de la route
-    component: customerList
-  }
-//   {
-//     path: '/products',
-//     name: 'products',    // Nom de la route
-//     component: ProductList
-//   },
-//   {
-//     path: '/orders',
-//     name: 'orders',      // Nom de la route
-//     component: OrderList
-//   }
+    name: 'customers-list',   
+    component: ListCustomer,
+  },
+  {
+     path: '/products',
+     name: 'products-list',    
+     component: ListProduct,
+   },
+   {
+     path: '/orders',
+     name: 'order-list',      
+     component: ListOrder,
+   }
 ];
 
 const router = createRouter({
