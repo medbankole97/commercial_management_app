@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import ListCustomer from '../components/customers/ListCustomer.vue';
 import ListProduct from '../components/products/ListProduct.vue';
 import ListOrder from '../components/orders/ListOrder.vue';
+import AddOrder from '../components/orders/AddOrder.vue'; 
 
 const routes = [
   {
@@ -24,7 +25,12 @@ const routes = [
      path: '/orders',
      name: 'order-list',      
      component: ListOrder,
-   }
+   },
+   {
+    path: '/add-order',  
+    name: 'order-add',
+    component: AddOrder,
+  },
 ];
 
 const router = createRouter({
