@@ -26,12 +26,10 @@
             <td>{{ product.barcode }}</td>
             <td>{{ product.status }}</td>
             <td>
-              <router-link > <font-awesome-icon icon="eye" class="text-info me-2" @click="openViewModal(product)" />
-              </router-link>
-              <router-link ><font-awesome-icon icon="edit" class="text-warning me-2" @click="openEditModal(product)" />
-              </router-link>
-              <router-link ><font-awesome-icon icon="trash" class="text-danger" @click="remove(product)" />
-              </router-link>
+              <router-link > <font-awesome-icon icon="eye" class="text-info me-2" @click="openViewModal(product)" /></router-link>
+              <router-link ><font-awesome-icon icon="edit" class="text-warning me-2" @click="openEditModal(product)" /></router-link>
+              <router-link ><font-awesome-icon icon="trash" class="text-danger" @click="remove(product)" /></router-link>
+              
             </td>
           </tr>
         </tbody>

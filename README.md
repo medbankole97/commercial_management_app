@@ -41,7 +41,8 @@ Avant d'installer et d'exécuter cette application, assurez-vous que les outils 
    npm run dev
    ```
 
-
+### Déploiement sur Vercel
+[Lien Déploiement sur Vercel](https://commercial-management-app-tau.vercel.app)
    
 ### Auteur
 [Mohamed Bankolé](https://github.com/medbankole97)

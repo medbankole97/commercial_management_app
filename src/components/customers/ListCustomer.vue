@@ -22,12 +22,12 @@
           <td>{{ customer.email }}</td>
           <td>{{ customer.phone }}</td>
           <td>
-            <router-link ><font-awesome-icon icon="eye" class="text-info me-2" @click="openViewModal(customer)" />
-            </router-link>
-            <router-link ><font-awesome-icon icon="edit" class="text-warning me-2" @click="openEditModal(customer)" />
-            </router-link>
-            <router-link ><font-awesome-icon icon="trash" class="text-danger" @click="remove(index)" />
-            </router-link>
+            <router-link><font-awesome-icon icon="eye" class="text-info me-2" @click="openViewModal(customer)" /></router-link>
+          
+            <router-link><font-awesome-icon icon="edit" class="text-warning me-2" @click="openEditModal(customer)" /></router-link>
+            
+            <router-link><font-awesome-icon icon="trash" class="text-danger" @click="remove(index)" /> </router-link>
+          
           </td>
         </tr>
       </tbody>
