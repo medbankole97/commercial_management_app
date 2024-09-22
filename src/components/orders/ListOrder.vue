@@ -24,12 +24,13 @@
             <td>{{ order.trackNumber }}</td>
             <td>{{ order.status }}</td>
             <td>
-              <router-link :to="{ name: 'order-view', params: { id: order.trackNumber } }" ><font-awesome-icon icon="eye" class="text-info me-2" @click="viewOrder(order)" /></router-link>
-             <router-link :to="{ name: 'order-edit', params: { id: order.trackNumber } }"><font-awesome-icon icon="edit" class="text-warning me-2" /></router-link>
-              <router-link ><font-awesome-icon icon="trash" class="text-danger"   @click="confirmDelete(order)" /></router-link>
-              
-             
-            </td>
+            <router-link :to="{ name: 'order-view', params: { id: order.trackNumber } }"><font-awesome-icon icon="eye" class="text-info me-2" />
+            </router-link>
+            <router-link :to="{ name: 'order-edit', params: { id: order.trackNumber } }"><font-awesome-icon icon="edit" class="text-warning me-2" />
+            </router-link>
+            <font-awesome-icon icon="trash" class="text-danger cursor-pointer" @click="confirmDelete(order)" />
+          </td>
+
           </tr>
         </tbody>
       </table>
@@ -95,5 +96,8 @@ const viewOrder = (id) => {
   th {
     text-align: left;
   }
+  .cursor-pointer {
+    cursor: pointer;
+}
   </style>
   

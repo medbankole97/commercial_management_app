@@ -26,11 +26,10 @@
             <td>{{ product.barcode }}</td>
             <td>{{ product.status }}</td>
             <td>
-              <router-link > <font-awesome-icon icon="eye" class="text-info me-2" @click="openViewModal(product)" /></router-link>
-              <router-link ><font-awesome-icon icon="edit" class="text-warning me-2" @click="openEditModal(product)" /></router-link>
-              <router-link ><font-awesome-icon icon="trash" class="text-danger" @click="remove(product)" /></router-link>
-              
-            </td>
+            <font-awesome-icon icon="eye" class="text-info me-2 cursor-pointer" @click="openViewModal(product)" />
+            <font-awesome-icon icon="edit" class="text-warning me-2 cursor-pointer" @click="openEditModal(product)" />
+            <font-awesome-icon icon="trash" class="text-danger cursor-pointer" @click="remove(product)" />
+             </td>
           </tr>
         </tbody>
       </table>
@@ -335,6 +334,9 @@ function remove (index)  {
     border: none;
     font-size: 1.5rem;
   }
+  .cursor-pointer {
+    cursor: pointer;
+}
  
   </style>
   
