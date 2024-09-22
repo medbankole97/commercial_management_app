@@ -26,7 +26,7 @@
           
             <router-link><font-awesome-icon icon="edit" class="text-warning me-2" @click="openEditModal(customer)" /></router-link>
             
-            <router-link><font-awesome-icon icon="trash" class="text-danger" @click="remove(index)" /> </router-link>
+            <router-link><font-awesome-icon icon="trash" class="text-danger" @click="remove(index)" /></router-link>
           
           </td>
         </tr>
